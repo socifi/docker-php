@@ -1,6 +1,6 @@
 FROM php:7.1-zts
 
-MAINTAINER Jiří Šimeček <jirka@simecek.org>
+LABEL maintainer "code@socifi.com" description "SOCIFI Development Team"
 
 COPY config/php.ini /usr/local/etc/php/
 
