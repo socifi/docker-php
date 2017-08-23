@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
     libssl-dev \
     libmemcached-dev \
     wget \
-    git
+    git \
+    libxml2-dev
 
 RUN pecl install memcache \
     && pecl install mongo \
@@ -30,6 +31,7 @@ RUN pecl install memcache \
         pdo_mysql \
         zip \
         sockets \
+        soap \
     && docker-php-ext-enable \
         opcache \
         mongo \

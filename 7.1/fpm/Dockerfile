@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
     libssl-dev \
     libmemcached-dev \
     wget \
-    git
+    git \
+    libxml2-dev
 
 RUN pecl install mongodb \
     && pecl install redis \
@@ -29,6 +30,7 @@ RUN pecl install mongodb \
         pdo_mysql \
         zip \
         sockets \
+        soap \
     && docker-php-ext-enable \
         opcache \
         mongodb \
