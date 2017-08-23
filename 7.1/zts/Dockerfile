@@ -41,6 +41,7 @@ RUN pecl install \
 RUN git clone https://github.com/krakjoe/pthreads.git \
         && ( \
             cd pthreads \
+            && git reset --hard 70040812d22798c3dd4cfc3b612bd9f56a1dc7ba \
             && phpize \
             && ./configure --enable-pthreads \
             && make -j$(nproc) \
