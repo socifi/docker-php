@@ -12,7 +12,8 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libpng12-dev \
     libssl-dev \
-    libmemcached-dev \
+    libmemcached-dev \    
+    libpq-dev \
     wget \
     git
 
@@ -28,6 +29,7 @@ RUN pecl install \
         mysqli \
         pcntl \
         pdo_mysql \
+        pdo_pgsql \
         zip \
         sockets \
     && docker-php-ext-enable \

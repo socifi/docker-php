@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     libpng12-dev \
     libssl-dev \
     libmemcached-dev \
+    libpq-dev \
     wget \
     git \
     libxml2-dev
@@ -28,6 +29,7 @@ RUN pecl install mongodb \
         mysqli \
         pcntl \
         pdo_mysql \
+        pdo_pgsql \
         zip \
         sockets \
         soap \
